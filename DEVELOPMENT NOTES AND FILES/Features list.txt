@@ -1,0 +1,24 @@
+Calendario
+    1. Calendario Fechas Torneos
+        .Album Fotos torneos pasados
+    2. noticias abajo del calendario
+Nosotros
+    2 info necesaria (comsion directiva, contacto, about us, , etc)
+    3 Mapa (encuentra tu escuela mas cercana)
+  4 (lista de instructores tal vez)
+
+Utilidad
+    5 temario (online o descarga)
+        .temario gups
+        .descarga de planillas itf fati atra
+
+Sponsors/descuentos               /// a futuro
+    6 lugares para sponsors
+
+
+Vidriera
+    7 Vidriera Productos (futura tienda) (selector de productos por escuela/ cada instructor carga los productos en stock)
+
+|||||||||
+navbar:
+  
