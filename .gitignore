@@ -2,7 +2,8 @@
 
 # dependencies
 /node_modules
-/'DEVELOPMENT NOTES AND FILES'
+/.netrc
+/"DEVELOPMENT NOTES AND FILES"
 /.pnp
 .pnp.js
 
