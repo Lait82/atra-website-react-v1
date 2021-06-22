@@ -4,10 +4,10 @@ import Home from './pages';
 import AboutUsSection from './components/aboutus'
 function App() {
   return (
-      <Router>
+    <Router>
         <Home />
         <AboutUsSection/>
-      </Router>
+    </Router>
   )
 }
 

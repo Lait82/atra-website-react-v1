@@ -1,6 +1,7 @@
 import React from 'react'
 import Video from '../../videos/background_video.mp4'
 import {AboutUsContainer, AboutUsBg, VideoBg} from './aboutusElements.js';
+
 function AboutUsSection() {
   return (
     <AboutUsContainer>
