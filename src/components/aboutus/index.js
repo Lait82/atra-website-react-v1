@@ -15,10 +15,10 @@ import {AboutUsContainer,
   import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 
 
-
 function AboutUsSection() {
   return (
     <AboutUsContainer>
+
       <AboutUsBg>
         <VideoBg autoPlay loop muted src={Video} type='video/mp4' />
       </AboutUsBg>
@@ -26,34 +26,52 @@ function AboutUsSection() {
         <SchoolsContainer>
           <SchoolsMap>
             <SchoolsMapHeader>
-              {/*CONTENIDO LINEA 67*/}
+              {<><h1>Encontra tu Sede Mas Cercana!</h1>
+            <select>
+              <option> Elegi tu provincia</option>
+              <option> daf</option>
+              <option> daf</option>
+              <option> daf</option>
+            </select></>}
             </SchoolsMapHeader>
             <Map>
               <MapContainer center={[51.505, -0.09]} zoom={13} scrollWheelZoom={false}>
                 <TileLayer 
-                  attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors' 
-                  url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                    attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors' 
+                    url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                 />
-                  <Marker position={[51.505, -0.09]}>
-                    <Popup>
-                      A pretty CSS3 popup. <br /> Easily customizable.
-                    </Popup>
-                  </Marker>
+                <Marker position={[51.505, -0.09]}>
+                  <Popup>
+                    A pretty CSS3 popup. <br /> Easily customizable.
+                  </Popup>
+                </Marker>
               </MapContainer>
             </Map>
           </SchoolsMap>
 
           <SchoolInfoFrame>
             <SchoolInfoContainer>
-              {/* {Data imagen blablabla} */}
+              {<>
+                <h1>Sede ATRA Baroneeeee efes e</h1>
+                {/*<img src={} style="width:150px; height:150px" />*/}
+              </>}
               <InfoInstructor>
-                {/* {info blablabla} */}
+                {<><p>Instructor:</p>
+            <p> Raul alberto Alvarenga xddd xdxddd  dan</p>
+                </>}
               </InfoInstructor>
               <SchoolInfoLocation>
-                {/* {
-
-                  Info blablabla
-                 */}
+                {<>
+                  <p>Direccion: avenida pirulo N°4324</p>
+            <ul>
+              <li>lun: 5432 5452</li>
+              <li>mar: 423 3232</li>
+              <li>mie: 32 323</li>
+              <li>jue: 23 412</li>
+              <li>vie: 23 13</li>
+            </ul>
+            <p>Telefono: 532 423452</p>
+                </>}
               </SchoolInfoLocation>
             </SchoolInfoContainer>
           </SchoolInfoFrame>
