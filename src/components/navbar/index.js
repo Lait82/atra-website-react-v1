@@ -1,5 +1,15 @@
 import React from 'react';
-import { Nav, NavbarContainer, NavLogo, NavImg, MobileIcon, NavMenu, NavItem, NavLinks, NavBtn, NavBtnLink } from './navbarElements';
+import { 
+  Nav,
+  NavbarContainer,
+  NavLogo,
+  NavImg,
+  MobileIcon,
+  NavMenu,
+  NavItem,
+  NavLinks,
+  NavBtn,
+  NavBtnLink} from './navbarElements';
 import {FaBars} from 'react-icons/fa';
 import atra_logo from '../../images/atra_logo.png';
 

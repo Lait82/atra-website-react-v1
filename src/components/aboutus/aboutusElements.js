@@ -85,9 +85,10 @@ export const SchoolInfoFrame = styled.div`
 	justify-content: center;
 	align-content: center;
 	background-color: red;
-	width: 27%;
+	width: 33%;
 	height: min-content;
 	border-radius: 20px;
+	margin-left: 30px;
 
   //efecto vidrio
   background: rgba(187, 187, 187, 0.5);
