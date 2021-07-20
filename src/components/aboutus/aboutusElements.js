@@ -67,14 +67,16 @@ export const SchoolsMapHeader = styled.div`
 	// ESTE TRANSPARENTE
 	display: flex;
 	width: 100%;
+	height: 15%;
 	justify-content: space-around;
 	align-items: center;
 	//background-color: olive;
 	///////////// EL SELECT VA ACA ANIDADO
 `
 export const Map = styled.div`
-  height: 100%;
 	width: 100%;
+	height: 85%;
+	background-color: red;
 	border-radius: 20px;
 	overflow: hidden;
 `
