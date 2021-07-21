@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import {FaWhatsapp, FaFacebookF, FaYoutube} from 'react-icons/fa';
 
 
 
@@ -111,4 +112,20 @@ export const InfoInstructor = styled.div`
 `
 export const SchoolInfoLocation = styled.div`
 /////////////// ACA VA EL ESTILO DEL UL
+`
+export const SocialMediaSede = styled.div`
+	display: flex;
+	width: 100%;
+	justify-content: space-around;
+	padding-bottom: 12px;
+`
+export const Wpp = styled(FaWhatsapp)`
+	color: orange;
+	&:hover{
+		transition: 400ms;
+		transform: translateY(-3px);
+		color: black;
+	}
+	&:l
+
 `

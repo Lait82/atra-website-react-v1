@@ -11,9 +11,12 @@ import {AboutUsContainer,
   SchoolInfoFrame,
   SchoolInfoContainer,
   InfoInstructor,
-  SchoolInfoLocation} from './aboutusElements.js';
-// import {MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
+  SchoolInfoLocation,
+  SocialMediaSede,
+  Wpp} from './aboutusElements.js';
 import {Mapa} from '../map';
+import sede_logo from '../../images/atra_logo.png'
+// import {FaWhatsapp, FaFacebookF, FaYoutube} from 'react-icons/fa';
 
 
 function AboutUsSection() {
@@ -44,25 +47,30 @@ function AboutUsSection() {
             <SchoolInfoContainer>
               {<>
                 <h1>Sede ATRA Baroneeeee efes e</h1>
-                {/*<img src={} style="width:150px; height:150px" />*/}
+                <img src={sede_logo} style={{width:150, height:150}} alt="" />
               </>}
               <InfoInstructor>
                 {<><p>Instructor:</p>
-            <p> Raul alberto Alvarenga xddd xdxddd  dan</p>
+                  <p> Raul alberto Alvarenga xddd xdxddd  dan</p>
                 </>}
               </InfoInstructor>
               <SchoolInfoLocation>
                 {<>
                   <p>Direccion: avenida pirulo N°4324</p>
-            <ul>
-              <li>lun: 5432 5452</li>
-              <li>mar: 423 3232</li>
-              <li>mie: 32 323</li>
-              <li>jue: 23 412</li>
-              <li>vie: 23 13</li>
-            </ul>
-            <p>Telefono: 532 423452</p>
+                  <ul>
+                    <li>lun: 5432 5452</li>
+                    <li>mar: 423 3232</li>
+                    <li>mie: 32 323</li>
+                    <li>jue: 23 412</li>
+                    <li>vie: 23 13</li>
+                  </ul>
+                  <p>Telefono: 532 423452</p>
                 </>}
+                <SocialMediaSede>
+                  <Wpp />
+                  {/* <FaFacebookF />
+                  <FaYoutube /> */}
+                </SocialMediaSede>
               </SchoolInfoLocation>
             </SchoolInfoContainer>
           </SchoolInfoFrame>
