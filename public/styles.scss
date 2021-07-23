@@ -1,0 +1,24 @@
+:root{
+  --yellow-atra: #f2b000;
+  --blue-atra: #006fa7;
+  --gradient-primary: linear-gradient(45deg, red, blue);
+}
+.highlight {
+  color: white;
+  position: relative;
+}
+
+.highlight::after {
+  display: block;
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.7;
+  transform: scale(1.07, 1.05) skewX(-15deg);
+  background-image: var(--gradient-primary);
+
+}

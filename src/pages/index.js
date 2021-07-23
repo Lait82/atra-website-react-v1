@@ -12,7 +12,7 @@ function Home() {
 
   return (
     <Router>
-      <Sidebar isOpen={isOpen} toggle={toggle} />
+      {/* <Sidebar isOpen={isOpen} toggle={toggle} /> */}
       <Navbar toggle={toggle}/>
     </Router>
   )
