@@ -100,6 +100,7 @@ function AboutUsSection() {
                       vitae aliquet varius. Fusce a rutrum nisi. Aliquam sodales lacinia eleifend. Duis dignissim, turpis at aliquam rhoncus, neque diam aliquam justo, et elementum lorem sem non tellus. Pellentesque mollis nisl eget enim faucibus bibendum. Curabitur laoreet non libero nec imperdiet. Quisque pretium efficitur euismod. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
           </>}
         </AboutUsHistoryContainer>
+        <SeparatorBox/>
       </AboutUsContent>
     </AboutUsContainer>
   )
