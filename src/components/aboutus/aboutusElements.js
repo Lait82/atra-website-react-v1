@@ -1,6 +1,9 @@
 import styled from 'styled-components'
 import {FaWhatsapp, FaFacebookF, FaYoutube} from 'react-icons/fa';
 
+// yellow atra: #006fa7
+// blue atra: 
+
 const GlassEffect = styled.div`
 	background: rgba(187, 187, 187, 0.5);
 	backdrop-filter: blur(16px);
@@ -182,6 +185,7 @@ export const Yt = styled(FaYoutube)`
 `
 export const AboutUsHistoryContainer = styled(GlassEffect)`
 	display: flex;
+	position: relative;
 	width:85%;
 	flex-direction: column;
 	border-radius: 20px;
@@ -194,5 +198,16 @@ export const AboutUsHistoryContainer = styled(GlassEffect)`
 	h1{
 		margin-left: 30px;
 		width:fit-content;
+	}
+	&::before{
+		content: '';
+    position: absolute;
+		width: 10px;
+    top: 0;
+		bottom: 0;
+		transform: translateX(-30px);
+		border-radius: 12px;
+		background-image: linear-gradient(red, blue);
+		opacity: 0.4;
 	}
 `
