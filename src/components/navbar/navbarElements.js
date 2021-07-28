@@ -3,15 +3,15 @@ import { Link as LinkRouter } from 'react-router-dom';
 import { Link as LinkScroll } from 'react-scroll';
 
 export const Nav = styled.nav`
-	background: black;
+	font-family: 'Baloo Chettan 2', cursive;
+	background: rgba(0,0,0,0.6);
 	height: 120px;
-	//margin-top: -80px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	font-size: 1rem;
+	font-size: 1.2rem;
 	position: sticky;
-	top: 0;
+	/* top: 0; */
 	z-index: 10;
 
 	@media screen and (max-width: 960px) {
@@ -21,6 +21,7 @@ export const Nav = styled.nav`
 export const NavbarContainer = styled.div`
 	display: flex;
 	justify-content: space-between;
+	/* align-items:center; */
 	height: 80px;
 	z-index: 1;
 	width: 100%;
@@ -33,9 +34,9 @@ export const NavLogo = styled(LinkRouter)`
 `;
 
 export const NavImg = styled.img`
-	background: #006fa7;
+	
 	border-radius: 999px;
-	border: solid 10px black;
+	border: solid 10px rgba(0,0,0,0.6);
 	width: 8rem;
 	height: 8rem;
 `;
@@ -56,10 +57,13 @@ export const MobileIcon = styled.div`
 
 export const NavMenu = styled.ul`
 	display: flex;
-	align-items: center;
+	justify-content: center;
+	align-self:center;
 	list-style: none;
 	text-align: center;
-	margin-right: -22px;
+	/* margin-right: -22px; */
+	height: 100%;
+	padding-inline-start: 0px;
 
 	@media screen and (max-width: 768px) {
 		display: none;
@@ -71,16 +75,21 @@ export const NavItem = styled.li`
 `;
 
 export const NavLinks = styled(LinkScroll)`
-	color: white;
+	color: whitesmoke;
 	display: flex;
 	align-items: center;
 	text-decoration: none;
 	padding: 0 1rem;
 	height: 100%;
 	cursor: pointer;
+	/* background-color: black; */
 
 	&.active {
 		border-bottom: 3px solid #01bf71;
+	}
+	&:hover{
+		transition:250ms;
+		background-color: rgba(77,77,77, 0.2);
 	}
 `;
 

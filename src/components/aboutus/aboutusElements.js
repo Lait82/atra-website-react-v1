@@ -15,10 +15,6 @@ export const SeparatorBox = styled.div`
 `
 
 
-
-
-
-
 export const AboutUsContainer = styled.div`
   background: #0c0c0c;
   display:flex;
