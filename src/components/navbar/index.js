@@ -3,13 +3,15 @@ import {
   Nav,
   NavbarContainer,
   NavLogo,
+  LogoContainer,
   NavImg,
   MobileIcon,
   NavMenu,
   NavItem,
   NavLinks,
   NavBtn,
-  NavBtnLink} from './navbarElements';
+  NavBtnLink
+} from './navbarElements';
 import {FaBars} from 'react-icons/fa';
 import atra_logo from '../../images/atra_logo.png';
 
@@ -19,7 +21,9 @@ const Navbar = ({toggle})  =>{
       <Nav>
         <NavbarContainer>
           <NavLogo to="/">
-            <NavImg src={atra_logo} />
+            <LogoContainer>
+              <NavImg src={atra_logo} />
+            </LogoContainer>
           </NavLogo>
           <MobileIcon onClick={toggle}>
             <FaBars />
