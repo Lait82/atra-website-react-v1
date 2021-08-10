@@ -3,12 +3,14 @@ import {BrowserRouter as Router} from 'react-router-dom';
 import Home from './pages';
 import AboutUsSection from './components/aboutus'
 import Calendar from './components/calendar'
+import News from './components/news'
 function App() {
   return (
     <Router>
         <Home />
-        {/* <AboutUsSection/> */}
+        <AboutUsSection/>
         <Calendar />
+        <News />
     </Router>
   )
 }

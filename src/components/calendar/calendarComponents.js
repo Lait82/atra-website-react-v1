@@ -129,20 +129,20 @@ export const EventType = styled.img`
 `
 
 export const NextMonths = styled.div` // This is the parent class of NextMonthContaine.divr
-  background-color: black;
   display: grid;
   grid-template-rows: 1fr 1fr;
   width: 100%;
   border-radius: 20px;
   overflow: hidden;
+  z-index:1;  ////////////////////////////  VER VIDEO SOBRE COMO FUNCIONA z index con Position
 ` 
 
-export const NextMonthContainer = styled.div`
+export const NextMonthContainer = styled(GlassEffect)`
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 100%;
-  background-image:linear-gradient(#749d9e, #b3a68b);
+  height: 95%;
+  border-radius: 35px;
 `
 
 export const MonthName = styled.div`
@@ -168,13 +168,15 @@ export const NextMonth = styled.div` // this has to be equal to month grid    FF
 `
 
 export const SmallCalendarDay = styled.div`
+  color:${props => props.scdEvent ? 'red' : 'black'};
   display: flex;
   position: relative;
   align-items: center;
   justify-content: center;
   font-size: large;
   font-weight: bolder;
-  color: ${blackOpacity};
+  opacity:0.8;
+  /* color: ${blackOpacity}; */
   // border-top: solid 2px var(--black-opacity);
   // border-left: solid 2px var(--black-opacity);
 `

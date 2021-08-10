@@ -27,9 +27,9 @@ function Calendar(){
   return(
   <CalendarSection>
 
-  <AboutUsBg>
-  <VideoBg autoPlay loop muted src={Video} type='video/mp4' />
-  </AboutUsBg>
+  {/* <AboutUsBg>
+    <VideoBg autoPlay loop muted src={Video} type='video/mp4' />
+  </AboutUsBg> */}
 
     <CalendarContainer>
       <Months>
@@ -122,21 +122,21 @@ function Calendar(){
 
         <NextMonths>
           <NextMonthContainer> {/*month 1*/}
-                <MonthName>
-                  <span className="highlight">
-                    Septiembre
-                  </span>
-                </MonthName>
-                <DayNames>
-                  <span>Lun</span>
-                  <span>Mar</span>
-                  <span>Mié</span>
-                  <span>Jue</span>
-                  <span>Vie</span>
-                  <span>Sab</span>
-                  <span>Dom</span>
-                </DayNames>
-                <NextMonth>
+            <MonthName>
+              <span className="highlight">
+              Septiembre
+              </span>
+            </MonthName>
+            <DayNames>
+              <DayNamesContainer><span>Lun</span></DayNamesContainer>
+              <DayNamesContainer><span>Mar</span></DayNamesContainer>
+              <DayNamesContainer><span>Mié</span></DayNamesContainer>
+              <DayNamesContainer><span>Jue</span></DayNamesContainer>
+              <DayNamesContainer><span>Vie</span></DayNamesContainer>
+              <DayNamesContainer><span>Sab</span></DayNamesContainer>
+              <DayNamesContainer><span>Dom</span></DayNamesContainer>
+            </DayNames>
+            <NextMonth>
                   <SmallCalendarDay>31</SmallCalendarDay>
                   <SmallCalendarDay>1</SmallCalendarDay>
                   <SmallCalendarDay>2</SmallCalendarDay>
@@ -173,8 +173,62 @@ function Calendar(){
                   <SmallCalendarDay>2</SmallCalendarDay>
                   <SmallCalendarDay>3</SmallCalendarDay>
                 </NextMonth>
-            </NextMonthContainer>
-           
+          </NextMonthContainer>
+          {/*////////////////////////// MONTHS SEPARATOR /////////////////////////*/}
+          <NextMonthContainer> {/*month 2*/}
+            <MonthName>
+              <span className="highlight">
+              Octubre
+              </span>
+            </MonthName>
+            <DayNames>
+              <DayNamesContainer><span>Lun</span></DayNamesContainer>
+              <DayNamesContainer><span>Mar</span></DayNamesContainer>
+              <DayNamesContainer><span>Mié</span></DayNamesContainer>
+              <DayNamesContainer><span>Jue</span></DayNamesContainer>
+              <DayNamesContainer><span>Vie</span></DayNamesContainer>
+              <DayNamesContainer><span>Sab</span></DayNamesContainer>
+              <DayNamesContainer><span>Dom</span></DayNamesContainer>
+            </DayNames>
+            <NextMonth>
+              <SmallCalendarDay>31</SmallCalendarDay>
+              <SmallCalendarDay>1</SmallCalendarDay>
+              <SmallCalendarDay>2</SmallCalendarDay>
+              <SmallCalendarDay>3</SmallCalendarDay>
+              <SmallCalendarDay>4</SmallCalendarDay>
+              <SmallCalendarDay>5</SmallCalendarDay>
+              <SmallCalendarDay>6</SmallCalendarDay>
+              <SmallCalendarDay>7</SmallCalendarDay>
+              <SmallCalendarDay scdEvent="true">8</SmallCalendarDay>
+              <SmallCalendarDay>9</SmallCalendarDay>
+              <SmallCalendarDay>10</SmallCalendarDay>
+              <SmallCalendarDay>11</SmallCalendarDay>
+              <SmallCalendarDay scdEvent={true}>12</SmallCalendarDay>
+              <SmallCalendarDay>13</SmallCalendarDay>
+              <SmallCalendarDay>14</SmallCalendarDay>
+              <SmallCalendarDay>15</SmallCalendarDay>
+              <SmallCalendarDay>16</SmallCalendarDay>
+              <SmallCalendarDay>17</SmallCalendarDay>
+              <SmallCalendarDay>18</SmallCalendarDay>
+              <SmallCalendarDay scdEvent={true}>19</SmallCalendarDay>
+              <SmallCalendarDay>20</SmallCalendarDay>
+              <SmallCalendarDay>21</SmallCalendarDay>
+              <SmallCalendarDay>22</SmallCalendarDay>
+              <SmallCalendarDay scdEvent={true}>23</SmallCalendarDay>
+              <SmallCalendarDay>24</SmallCalendarDay>
+              <SmallCalendarDay>25</SmallCalendarDay>
+              <SmallCalendarDay>26</SmallCalendarDay>
+              <SmallCalendarDay>27</SmallCalendarDay>
+              <SmallCalendarDay>28</SmallCalendarDay>
+              <SmallCalendarDay>29</SmallCalendarDay>
+              <SmallCalendarDay>30</SmallCalendarDay>
+              <SmallCalendarDay>31</SmallCalendarDay>
+              <SmallCalendarDay scdEvent={true}>1</SmallCalendarDay>
+              <SmallCalendarDay>2</SmallCalendarDay>
+              <SmallCalendarDay>3</SmallCalendarDay>
+            </NextMonth>
+          </NextMonthContainer>
+
         </NextMonths>
       
       

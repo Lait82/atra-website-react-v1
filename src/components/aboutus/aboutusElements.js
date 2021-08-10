@@ -23,7 +23,7 @@ export const AboutUsContainer = styled.div`
   padding: 0 30px;
   height: fit-content;
   position:relative;
-  z-index: 1;
+  /* z-index: 1; */
 	// Este solia tener el before del filtro oscuro
 `
 
